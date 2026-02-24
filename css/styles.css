@@ -400,6 +400,53 @@ p:last-child { margin-bottom: 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
+}
+
+/* ---------- Program Banner Image ---------- */
+.program-banner {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0; /* removes inline-block gap */
+}
+
+.program-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 160px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media (max-width: 768px) {
+  .program-banner img {
+    max-height: 100px;
+  }
+}
+
+/* ---------- Bio / About page headshot ---------- */
+.bio-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.bio-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--gray-mid);
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: var(--shadow-md);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .bio-photo {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /* ---------- Stats Bar ---------- */
