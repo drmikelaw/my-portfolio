@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Dr. Mike Law — academic background, 25+ years of corporate L&D experience, teaching philosophy, and professional leadership." />
+  <title>About | Dr. Mike Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+    .philosophy-quote {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--gsu-blue);
+      border-left: 4px solid var(--gsu-blue);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      background: rgba(0,61,165,0.04);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      line-height: 1.7;
+    }
+    .credentials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .credential-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1rem 1.25rem;
+      background: var(--white);
+      border: 1px solid var(--gray-mid);
+      border-radius: var(--radius);
+    }
+    .credential-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(0,61,165,0.08);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gsu-blue);
+    }
+    .credential-text strong { display: block; font-size: 0.92rem; color: var(--text-primary); }
+    .credential-text span { font-size: 0.82rem; color: var(--gray-dark); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Dr. Mike Law home">
+        <span class="nav__brand-name">Dr. Mike Law</span>
+        <span class="nav__brand-title">Georgia State University</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html" class="nav__cta btn btn-primary">Contact</a>
+      </div>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__label">About</div>
+        <h1 class="page-hero__title">Dr. Mike Law</h1>
+        <p class="page-hero__sub">Scholar-practitioner bridging Fortune 500 L&amp;D expertise with academic rigor in instructional design and technology.</p>
+      </div>
+    </section>
+
+    <!-- ===== BIO ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <div class="grid-2" style="align-items:start;gap:3.5rem;">
+          <div>
+            <span class="section-label">Biography</span>
+            <h2 class="section-title">Academic &amp; Professional Background</h2>
+            <div class="divider"></div>
+            <p>Dr. Mike Law serves as Clinical Associate Professor and Graduate Program Coordinator for the M.S. in Instructional Design &amp; Technology program at Georgia State University. His career represents a rare fusion of deep industry practice and scholarly rigor.</p>
+            <p>With more than 25 years of experience designing, implementing, and evaluating learning solutions in Fortune 500 environments, Dr. Law brings an unmatched practitioner lens to his academic role. He has led enterprise-scale learning initiatives across industries including retail, logistics, aviation, public health, and consumer products.</p>
+            <p>At GSU, Dr. Law oversees curriculum development, faculty coordination, and the Corporate Learning Advisory Board — an industry partnership model that ensures students graduate with skills directly aligned with employer needs. His teaching emphasizes the application of evidence-based instructional design theory to solve real organizational performance challenges.</p>
+            <p>Dr. Law currently serves as Vice President of Technology for the ISPI Atlanta Chapter, contributing to the professional development community for human performance improvement practitioners across the region.</p>
+          </div>
+          <div>
+            <span class="section-label">Credentials &amp; Roles</span>
+            <h3 style="margin-bottom:0.5rem;">Current Positions</h3>
+            <div class="divider"></div>
+            <div class="credentials-grid">
+              <div class="credential-item">
+                <div class="credential-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/></svg>
+                </div>
+                <div class="credential-text">
+                  <strong>Clinical Associate Professor</strong>
+                  <span>Georgia State University</span>
+                </div>
+              </div>
+              <div class="credential-item">
+                <div class="credential-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div class="credential-text">
+                  <strong>Graduate Program Coordinator</strong>
+                  <span>M.S. Instructional Design &amp; Technology</span>
+                </div>
+              </div>
+              <div class="credential-item">
+                <div class="credential-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                </div>
+                <div class="credential-text">
+                  <strong>VP of Technology</strong>
+                  <span>ISPI Atlanta Chapter</span>
+                </div>
+              </div>
+              <div class="credential-item">
+                <div class="credential-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                </div>
+                <div class="credential-text">
+                  <strong>Corporate L&amp;D Consultant</strong>
+                  <span>Fortune 500 Partners</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:2rem;">
+              <span class="section-label">Areas of Expertise</span>
+              <div style="margin-top:0.75rem;">
+                <span class="tag">Instructional Design</span>
+                <span class="tag">Corporate L&amp;D</span>
+                <span class="tag">eLearning Development</span>
+                <span class="tag">Performance Consulting</span>
+                <span class="tag">Educational Technology</span>
+                <span class="tag">Curriculum Design</span>
+                <span class="tag">Learning Analytics</span>
+                <span class="tag">Needs Assessment</span>
+                <span class="tag">Adult Learning Theory</span>
+                <span class="tag">Program Evaluation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TEACHING PHILOSOPHY ===== -->
+    <section class="section section--alt fade-in">
+      <div class="container">
+        <span class="section-label">Teaching Philosophy</span>
+        <h2 class="section-title">Bridging Theory and Practice</h2>
+        <div class="divider"></div>
+        <div class="grid-2" style="gap:3rem;align-items:start;">
+          <div>
+            <div class="philosophy-quote">
+              "Instructional designers are, at their core, performance consultants. The most effective practitioners understand not just how people learn, but how organizations function — and how to bridge the two."
+            </div>
+            <p>My teaching philosophy is rooted in the scholar-practitioner model. I believe that rigorous academic theory and real-world practice are not in tension — they are mutually reinforcing. The best instructional designers emerge from programs that challenge them to think critically about evidence while simultaneously applying that knowledge to authentic problems.</p>
+            <p>In every course I teach, students engage with real clients, real data, and real organizational challenges. This is not simulation — it is supervised practice, grounded in the theoretical frameworks that give practitioners the language and logic to explain what they do and why it works.</p>
+          </div>
+          <div>
+            <h3 style="margin-bottom:1.5rem;">Core Principles</h3>
+            <div style="display:flex;flex-direction:column;gap:1.25rem;">
+              <div class="card" style="padding:1.25rem;">
+                <div class="card__title">Performance-Centered Design</div>
+                <p class="card__text">Learning interventions must be evaluated against measurable performance outcomes, not just learner satisfaction or knowledge acquisition.</p>
+              </div>
+              <div class="card" style="padding:1.25rem;">
+                <div class="card__title">Authentic Learning Contexts</div>
+                <p class="card__text">Students learn best when they grapple with real organizational problems, not hypothetical scenarios. Industry partnerships make this possible.</p>
+              </div>
+              <div class="card" style="padding:1.25rem;">
+                <div class="card__title">Evidence-Based Practice</div>
+                <p class="card__text">Design decisions must be traceable to evidence — from the needs analysis through evaluation. Intuition is a starting point, not a justification.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CAREER TIMELINE ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <span class="section-label">Career Timeline</span>
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="divider"></div>
+        <div class="grid-2" style="gap:3rem;align-items:start;">
+          <div>
+            <h3 style="margin-bottom:1.5rem;font-size:1.1rem;color:var(--gray-dark);font-weight:600;">Academic Career</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">Current</div>
+                <div class="timeline-title">Clinical Associate Professor &amp; Graduate Program Coordinator</div>
+                <div class="timeline-org">Georgia State University — M.S. Instructional Design &amp; Technology</div>
+                <p class="timeline-desc">Leading the graduate IDT program, including curriculum oversight, Corporate Learning Advisory Board, faculty coordination, and student mentorship.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Previous</div>
+                <div class="timeline-title">Clinical Assistant Professor</div>
+                <div class="timeline-org">Georgia State University</div>
+                <p class="timeline-desc">Taught graduate courses in instructional design, eLearning development, performance consulting, and program evaluation.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 style="margin-bottom:1.5rem;font-size:1.1rem;color:var(--gray-dark);font-weight:600;">Industry Career</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">25+ Years</div>
+                <div class="timeline-title">Senior Learning &amp; Development Leader</div>
+                <div class="timeline-org">Fortune 500 Corporate Sector</div>
+                <p class="timeline-desc">Enterprise-scale instructional design, performance consulting, and L&amp;D strategy across multiple Fortune 500 organizations.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Ongoing</div>
+                <div class="timeline-title">Corporate Learning Partner</div>
+                <div class="timeline-org">The Home Depot · UPS · Delta Air Lines · CDC · Kimberly-Clark</div>
+                <p class="timeline-desc">Active corporate partnerships supporting curriculum relevance, student practicum experiences, and advisory board engagement.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Current</div>
+                <div class="timeline-title">Vice President of Technology</div>
+                <div class="timeline-org">ISPI Atlanta Chapter</div>
+                <p class="timeline-desc">Leadership role in the International Society for Performance Improvement's Atlanta chapter, overseeing technology strategy and member resources.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-name">Dr. Mike Law</div>
+          <div class="footer__brand-role">Clinical Associate Professor &amp; Graduate Program Coordinator<br>M.S. Instructional Design &amp; Technology — Georgia State University</div>
+          <p class="footer__brand-desc">Committed to preparing instructional design practitioners who bridge theory and real-world organizational performance.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="program.html">Program</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Connect</div>
+          <div class="footer__links">
+            <a href="https://www.linkedin.com/in/mikelaw" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a>
+            <a href="https://ispi.org" target="_blank" rel="noopener">ISPI Atlanta</a>
+            <a href="contact.html">Send a Message</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="year"></span> Dr. Mike Law. All rights reserved.</span>
+        <span class="footer__gsu">Georgia State University &mdash; Andrew Young School</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Dr. Mike Law — Clinical Associate Professor and Graduate Program Coordinator at Georgia State University." />
+  <title>Contact | Dr. Mike Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.25rem;
+      background: var(--white);
+      border: 1px solid var(--gray-mid);
+      border-radius: var(--radius);
+      transition: all var(--transition);
+    }
+    .contact-info-item:hover { box-shadow: var(--shadow-sm); }
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(0,61,165,0.08);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gsu-blue);
+    }
+    .contact-info-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray-dark);
+      margin-bottom: 0.2rem;
+    }
+    .contact-info-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .contact-info-value a {
+      color: var(--gsu-blue);
+    }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.85rem 1rem;
+      background: var(--white);
+      border: 1.5px solid var(--gray-mid);
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      transition: all var(--transition);
+    }
+    .social-link:hover {
+      border-color: var(--gsu-blue);
+      color: var(--gsu-blue);
+      background: rgba(0,61,165,0.04);
+      transform: translateX(4px);
+    }
+    .social-link-icon {
+      width: 34px;
+      height: 34px;
+      background: var(--gray-light);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gsu-blue);
+      transition: background var(--transition);
+    }
+    .social-link:hover .social-link-icon { background: rgba(0,61,165,0.1); }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 580px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Dr. Mike Law home">
+        <span class="nav__brand-name">Dr. Mike Law</span>
+        <span class="nav__brand-title">Georgia State University</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html" class="nav__cta btn btn-primary">Contact</a>
+      </div>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__label">Get in Touch</div>
+        <h1 class="page-hero__title">Contact Dr. Law</h1>
+        <p class="page-hero__sub">Questions about the M.S. IDT program, corporate partnerships, research collaboration, or speaking invitations — reach out directly.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT MAIN ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <div class="grid-2" style="gap:3.5rem;align-items:start;">
+
+          <!-- FORM -->
+          <div>
+            <span class="section-label">Send a Message</span>
+            <h2 class="section-title" style="margin-bottom:0.75rem;">Get in Touch</h2>
+            <p style="margin-bottom:2rem;">Fill out the form below and Dr. Law will respond within 2–3 business days. For urgent matters, please use the email address listed.</p>
+
+            <!-- Netlify Forms: hidden form for bot detection -->
+            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+              <input type="text" name="name" />
+              <input type="email" name="email" />
+              <input type="text" name="organization" />
+              <select name="inquiry-type"></select>
+              <textarea name="message"></textarea>
+            </form>
+
+            <!-- Visible form -->
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+              <input type="hidden" name="form-name" value="contact" />
+
+              <!-- Honeypot -->
+              <div style="display:none;" aria-hidden="true">
+                <label>Don't fill this out: <input name="bot-field" tabindex="-1" /></label>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name">Full Name <span style="color:#e53e3e;">*</span></label>
+                  <input class="form-control" type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address <span style="color:#e53e3e;">*</span></label>
+                  <input class="form-control" type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="organization">Organization / Institution</label>
+                <input class="form-control" type="text" id="organization" name="organization" placeholder="Company, university, or institution" autocomplete="organization" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="inquiry-type">Inquiry Type <span style="color:#e53e3e;">*</span></label>
+                <select class="form-control" id="inquiry-type" name="inquiry-type" required>
+                  <option value="" disabled selected>Select the nature of your inquiry…</option>
+                  <option value="program">M.S. IDT Program Questions</option>
+                  <option value="partnership">Corporate Partnership / Advisory Board</option>
+                  <option value="research">Research Collaboration</option>
+                  <option value="speaking">Speaking or Workshop Invitation</option>
+                  <option value="media">Media or Press Inquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Message <span style="color:#e53e3e;">*</span></label>
+                <textarea class="form-control" id="message" name="message" placeholder="Please describe how Dr. Law can help you…" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:0.85rem;">
+                Send Message
+              </button>
+            </form>
+
+            <div id="form-success" class="form-success" role="alert" tabindex="-1">
+              Thank you — your message has been received. Dr. Law will be in touch within 2–3 business days.
+            </div>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div>
+            <span class="section-label">Contact Information</span>
+            <h2 class="section-title" style="margin-bottom:1.5rem;">Direct Contact</h2>
+
+            <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;">
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-info-label">Email</div>
+                  <div class="contact-info-value"><a href="mailto:mlaw@gsu.edu">mlaw@gsu.edu</a></div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422A12.083 12.083 0 0112 21a12.083 12.083 0 01-6.16-10.422L12 14z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-info-label">Institution</div>
+                  <div class="contact-info-value">Georgia State University</div>
+                  <div style="font-size:0.83rem;color:var(--gray-dark);margin-top:0.1rem;">College of Education &amp; Human Development</div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-info-label">Location</div>
+                  <div class="contact-info-value">Atlanta, Georgia</div>
+                  <div style="font-size:0.83rem;color:var(--gray-dark);margin-top:0.1rem;">GSU Atlanta Campus</div>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="margin-bottom:1.25rem;font-size:1rem;">Professional Profiles</h3>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/mikelaw" target="_blank" rel="noopener" class="social-link">
+                <div class="social-link-icon">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <span>LinkedIn Profile</span>
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-left:auto;opacity:0.4;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="https://education.gsu.edu" target="_blank" rel="noopener" class="social-link">
+                <div class="social-link-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/></svg>
+                </div>
+                <span>GSU Faculty Page</span>
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-left:auto;opacity:0.4;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="https://ispi.org" target="_blank" rel="noopener" class="social-link">
+                <div class="social-link-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                </div>
+                <span>ISPI Atlanta Chapter</span>
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-left:auto;opacity:0.4;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+
+            <div class="card" style="margin-top:2rem;background:rgba(0,61,165,0.04);border-color:rgba(0,61,165,0.15);">
+              <h4 style="margin-bottom:0.5rem;">Common Inquiry Topics</h4>
+              <ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.35rem;">
+                <li style="font-size:0.88rem;color:var(--text-secondary);">Prospective M.S. IDT student questions</li>
+                <li style="font-size:0.88rem;color:var(--text-secondary);">Corporate Learning Advisory Board membership</li>
+                <li style="font-size:0.88rem;color:var(--text-secondary);">Student practicum and capstone partnerships</li>
+                <li style="font-size:0.88rem;color:var(--text-secondary);">Conference or workshop speaking invitations</li>
+                <li style="font-size:0.88rem;color:var(--text-secondary);">Research collaboration and grant partnerships</li>
+                <li style="font-size:0.88rem;color:var(--text-secondary);">Media and press inquiries</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-name">Dr. Mike Law</div>
+          <div class="footer__brand-role">Clinical Associate Professor &amp; Graduate Program Coordinator<br>M.S. Instructional Design &amp; Technology — Georgia State University</div>
+          <p class="footer__brand-desc">Committed to preparing instructional design practitioners who bridge theory and real-world organizational performance.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="program.html">Program</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Connect</div>
+          <div class="footer__links">
+            <a href="https://www.linkedin.com/in/mikelaw" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a>
+            <a href="https://ispi.org" target="_blank" rel="noopener">ISPI Atlanta</a>
+            <a href="contact.html">Send a Message</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="year"></span> Dr. Mike Law. All rights reserved.</span>
+        <span class="footer__gsu">Georgia State University &mdash; Andrew Young School</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

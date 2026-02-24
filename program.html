@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="M.S. Instructional Design &amp; Technology program at Georgia State University — curriculum overview, Corporate Learning Advisory Board, and student outcomes." />
+  <title>M.S. IDT Program | Dr. Mike Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+    .outcome-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1.1rem;
+    }
+    .outcome-check {
+      width: 22px;
+      height: 22px;
+      background: rgba(0,61,165,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+      color: var(--gsu-blue);
+    }
+    .outcome-check svg { width: 12px; height: 12px; }
+    .outcome-text { font-size: 0.95rem; color: var(--text-secondary); }
+    .course-card {
+      background: var(--white);
+      border: 1px solid var(--gray-mid);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      transition: all var(--transition);
+    }
+    .course-card:hover { box-shadow: var(--shadow-md); border-color: rgba(0,61,165,0.2); }
+    .course-num { font-size: 0.75rem; font-weight: 700; color: var(--gsu-blue); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.3rem; }
+    .course-name { font-size: 0.97rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.4rem; }
+    .course-desc { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
+    .advisory-card {
+      background: var(--white);
+      border: 1px solid var(--gray-mid);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      transition: all var(--transition);
+    }
+    .advisory-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .advisory-logo {
+      width: 64px;
+      height: 64px;
+      background: var(--gray-light);
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--gsu-blue);
+    }
+    .cta-banner {
+      background: linear-gradient(135deg, var(--gsu-blue) 0%, var(--gsu-blue-dark) 100%);
+      border-radius: 12px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      color: var(--white);
+    }
+    .cta-banner h2 { color: var(--white); margin-bottom: 0.75rem; }
+    .cta-banner p { color: rgba(255,255,255,0.8); max-width: 500px; margin: 0 auto 1.75rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Dr. Mike Law home">
+        <span class="nav__brand-name">Dr. Mike Law</span>
+        <span class="nav__brand-title">Georgia State University</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html" class="nav__cta btn btn-primary">Contact</a>
+      </div>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__label">Graduate Program</div>
+        <h1 class="page-hero__title">M.S. Instructional Design &amp; Technology</h1>
+        <p class="page-hero__sub">A practitioner-focused graduate program at Georgia State University preparing the next generation of learning design professionals.</p>
+      </div>
+    </section>
+
+    <!-- ===== PROGRAM OVERVIEW ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <div class="grid-2" style="gap:3.5rem;align-items:start;">
+          <div>
+            <span class="section-label">Program Overview</span>
+            <h2 class="section-title">Designed for Real-World Impact</h2>
+            <div class="divider"></div>
+            <p>The M.S. in Instructional Design &amp; Technology at Georgia State University is a rigorous, practice-oriented graduate program that prepares students to design, develop, and evaluate effective learning solutions across corporate, government, healthcare, and educational contexts.</p>
+            <p>Under Dr. Law's coordination, the program has deepened its emphasis on corporate and enterprise learning — connecting curriculum directly to the competencies most sought after by leading organizations. Students graduate as performance consultants, not just course designers.</p>
+            <p>The program is built on the premise that instructional design is a discipline of evidence and judgment. Students learn foundational learning theory, needs analysis, project management, eLearning development tools, and program evaluation — always in service of measurable performance outcomes.</p>
+          </div>
+          <div>
+            <span class="section-label">Student Outcomes</span>
+            <h3 style="margin-bottom:1rem;">What Graduates Can Do</h3>
+            <div class="divider"></div>
+            <div class="outcome-item">
+              <div class="outcome-check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+              <span class="outcome-text">Conduct systematic needs assessments and performance gap analyses in complex organizational settings</span>
+            </div>
+            <div class="outcome-item">
+              <div class="outcome-check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+              <span class="outcome-text">Design and develop evidence-based instructional solutions aligned with organizational performance goals</span>
+            </div>
+            <div class="outcome-item">
+              <div class="outcome-check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+              <span class="outcome-text">Develop eLearning content using industry-standard tools including Articulate 360, Adobe Captivate, and LMS platforms</span>
+            </div>
+            <div class="outcome-item">
+              <div class="outcome-check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+              <span class="outcome-text">Apply evaluation frameworks (Kirkpatrick, Phillips ROI) to measure learning effectiveness and business impact</span>
+            </div>
+            <div class="outcome-item">
+              <div class="outcome-check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+              <span class="outcome-text">Consult with business stakeholders, manage projects, and communicate design rationale to non-specialist audiences</span>
+            </div>
+            <div class="outcome-item">
+              <div class="outcome-check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+              <span class="outcome-text">Lead and contribute to enterprise learning strategy as L&amp;D managers, instructional designers, and performance consultants</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CURRICULUM ===== -->
+    <section class="section section--alt fade-in">
+      <div class="container">
+        <span class="section-label">Curriculum</span>
+        <h2 class="section-title">Sample Coursework</h2>
+        <p class="section-subtitle">Core courses reflect the intersection of theory, technology, and professional practice.</p>
+        <div class="grid-3" style="gap:1rem;">
+          <div class="course-card">
+            <div class="course-num">IDT 7410</div>
+            <div class="course-name">Foundations of Instructional Design</div>
+            <p class="course-desc">Survey of learning theories, instructional design models, and the systems approach to designing effective learning.</p>
+          </div>
+          <div class="course-card">
+            <div class="course-num">IDT 7420</div>
+            <div class="course-name">Needs Assessment &amp; Performance Analysis</div>
+            <p class="course-desc">Methods for identifying performance gaps, root cause analysis, and selecting appropriate interventions.</p>
+          </div>
+          <div class="course-card">
+            <div class="course-num">IDT 7430</div>
+            <div class="course-name">eLearning Design &amp; Development</div>
+            <p class="course-desc">Hands-on development using Articulate 360 and other industry tools; UX principles for digital learning environments.</p>
+          </div>
+          <div class="course-card">
+            <div class="course-num">IDT 7440</div>
+            <div class="course-name">Learning Management Systems</div>
+            <p class="course-desc">Administration, configuration, and analytics for enterprise LMS platforms; SCORM, xAPI, and integration standards.</p>
+          </div>
+          <div class="course-card">
+            <div class="course-num">IDT 7450</div>
+            <div class="course-name">Evaluation of Learning &amp; Performance</div>
+            <p class="course-desc">Kirkpatrick Model, Phillips ROI, and mixed-methods evaluation design for corporate and educational contexts.</p>
+          </div>
+          <div class="course-card">
+            <div class="course-num">IDT 7460</div>
+            <div class="course-name">Corporate Learning Strategy</div>
+            <p class="course-desc">Strategic alignment of learning initiatives with organizational goals; L&amp;D governance, portfolio management, and measurement.</p>
+          </div>
+          <div class="course-card">
+            <div class="course-num">IDT 7470</div>
+            <div class="course-name">Emerging Technologies in Learning</div>
+            <p class="course-desc">AI, AR/VR, microlearning, and adaptive systems — evaluating and applying emerging technologies in organizational contexts.</p>
+          </div>
+          <div class="course-card">
+            <div class="course-num">IDT 7490</div>
+            <div class="course-name">Capstone: Applied Instructional Design</div>
+            <p class="course-desc">End-to-end design project with a real organizational client — from needs analysis through evaluation planning.</p>
+          </div>
+          <div class="course-card">
+            <div class="course-num">IDT 7480</div>
+            <div class="course-name">Research Methods in IDT</div>
+            <p class="course-desc">Quantitative and qualitative research methods; literature review and evidence-based practice in learning design.</p>
+          </div>
+        </div>
+        <p style="font-size:0.85rem;color:var(--gray-dark);margin-top:1.25rem;">* Course numbers and titles are representative. Current course offerings subject to change. Visit the GSU Graduate Catalog for official program requirements.</p>
+      </div>
+    </section>
+
+    <!-- ===== ADVISORY BOARD ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <span class="section-label">Industry Partnership</span>
+        <h2 class="section-title">Corporate Learning Advisory Board</h2>
+        <div class="divider"></div>
+        <p style="max-width:680px;margin-bottom:2.5rem;">The Corporate Learning Advisory Board connects the M.S. IDT program directly to the organizations that hire our graduates. Board members provide curriculum guidance, practicum opportunities, guest instruction, and real-world project engagement — ensuring the program remains tightly aligned with industry needs.</p>
+        <div class="grid-3" style="gap:1.25rem;margin-bottom:2rem;">
+          <div class="advisory-card">
+            <div class="advisory-logo">HD</div>
+            <div style="font-weight:700;margin-bottom:0.3rem;">The Home Depot</div>
+            <p style="font-size:0.85rem;color:var(--text-secondary);margin:0;">Learning &amp; Development, Corporate University</p>
+          </div>
+          <div class="advisory-card">
+            <div class="advisory-logo">UPS</div>
+            <div style="font-weight:700;margin-bottom:0.3rem;">UPS</div>
+            <p style="font-size:0.85rem;color:var(--text-secondary);margin:0;">Global Learning Solutions &amp; Development</p>
+          </div>
+          <div class="advisory-card">
+            <div class="advisory-logo">DL</div>
+            <div style="font-weight:700;margin-bottom:0.3rem;">Delta Air Lines</div>
+            <p style="font-size:0.85rem;color:var(--text-secondary);margin:0;">Talent &amp; Organizational Effectiveness</p>
+          </div>
+          <div class="advisory-card">
+            <div class="advisory-logo">CDC</div>
+            <div style="font-weight:700;margin-bottom:0.3rem;">CDC</div>
+            <p style="font-size:0.85rem;color:var(--text-secondary);margin:0;">Public Health Learning &amp; Training</p>
+          </div>
+          <div class="advisory-card">
+            <div class="advisory-logo">KC</div>
+            <div style="font-weight:700;margin-bottom:0.3rem;">Kimberly-Clark</div>
+            <p style="font-size:0.85rem;color:var(--text-secondary);margin:0;">Human Resources &amp; Learning</p>
+          </div>
+          <div class="advisory-card" style="border-style:dashed;background:var(--gray-light);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem;">
+            <div style="color:var(--gray-dark);font-size:0.88rem;text-align:center;">Interested in joining the Advisory Board?</div>
+            <a href="contact.html" class="btn btn-outline" style="padding:0.5rem 1rem;font-size:0.82rem;">Get in Touch</a>
+          </div>
+        </div>
+        <div class="card" style="background:rgba(0,61,165,0.04);border-color:rgba(0,61,165,0.15);">
+          <h3 style="margin-bottom:0.75rem;">Board Member Benefits</h3>
+          <div class="grid-3">
+            <div>
+              <strong style="font-size:0.9rem;display:block;margin-bottom:0.3rem;">Talent Pipeline</strong>
+              <p class="card__text" style="font-size:0.85rem;">Early access to top graduating students for recruiting and hiring.</p>
+            </div>
+            <div>
+              <strong style="font-size:0.9rem;display:block;margin-bottom:0.3rem;">Curriculum Influence</strong>
+              <p class="card__text" style="font-size:0.85rem;">Shape program competencies to match your organization's evolving L&amp;D needs.</p>
+            </div>
+            <div>
+              <strong style="font-size:0.9rem;display:block;margin-bottom:0.3rem;">Research Collaboration</strong>
+              <p class="card__text" style="font-size:0.85rem;">Partner on applied research and capstone projects addressing real business challenges.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Ready to Learn More?</h2>
+          <p>Contact Dr. Law with questions about the M.S. IDT program, corporate partnerships, or graduate admissions at Georgia State University.</p>
+          <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-white">Contact Dr. Law</a>
+            <a href="https://www.gsu.edu" target="_blank" rel="noopener" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:#fff;">Visit GSU Website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-name">Dr. Mike Law</div>
+          <div class="footer__brand-role">Clinical Associate Professor &amp; Graduate Program Coordinator<br>M.S. Instructional Design &amp; Technology — Georgia State University</div>
+          <p class="footer__brand-desc">Committed to preparing instructional design practitioners who bridge theory and real-world organizational performance.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="program.html">Program</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Connect</div>
+          <div class="footer__links">
+            <a href="https://www.linkedin.com/in/mikelaw" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a>
+            <a href="https://ispi.org" target="_blank" rel="noopener">ISPI Atlanta</a>
+            <a href="contact.html">Send a Message</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="year"></span> Dr. Mike Law. All rights reserved.</span>
+        <span class="footer__gsu">Georgia State University &mdash; Andrew Young School</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

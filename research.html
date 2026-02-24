@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dr. Mike Law — Research, publications, conference presentations, and grants in instructional design, corporate learning, and educational technology." />
+  <title>Research &amp; Publications | Dr. Mike Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+    .research-nav {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .research-nav a {
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      border: 1.5px solid var(--gray-mid);
+      transition: all var(--transition);
+    }
+    .research-nav a:hover,
+    .research-nav a.active {
+      color: var(--gsu-blue);
+      border-color: var(--gsu-blue);
+      background: rgba(0,61,165,0.05);
+    }
+    .section-divider {
+      border: none;
+      border-top: 1.5px solid var(--gray-mid);
+      margin: 3rem 0;
+    }
+    .coming-soon-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.6rem;
+      background: #fff3e0;
+      border: 1px solid #ffe0b2;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #e65100;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .interests-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .interest-card {
+      padding: 1.25rem;
+      background: var(--white);
+      border: 1px solid var(--gray-mid);
+      border-top: 3px solid var(--gsu-blue);
+      border-radius: var(--radius);
+      transition: all var(--transition);
+    }
+    .interest-card:hover { box-shadow: var(--shadow-md); }
+    .interest-card strong { display: block; margin-bottom: 0.3rem; color: var(--text-primary); }
+    .interest-card p { font-size: 0.85rem; margin: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Dr. Mike Law home">
+        <span class="nav__brand-name">Dr. Mike Law</span>
+        <span class="nav__brand-title">Georgia State University</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html" class="nav__cta btn btn-primary">Contact</a>
+      </div>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__label">Scholarship</div>
+        <h1 class="page-hero__title">Research &amp; Publications</h1>
+        <p class="page-hero__sub">Scholarly work at the intersection of instructional design, corporate learning, performance improvement, and educational technology.</p>
+      </div>
+    </section>
+
+    <!-- ===== RESEARCH INTERESTS ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <span class="section-label">Research Focus</span>
+        <h2 class="section-title">Areas of Scholarly Interest</h2>
+        <div class="divider"></div>
+        <p style="max-width:640px;margin-bottom:2rem;">Dr. Law's research sits at the boundary of academic scholarship and organizational practice — investigating questions that matter both to the field of instructional design and to the practitioners who apply it.</p>
+        <div class="interests-grid">
+          <div class="interest-card">
+            <strong>Corporate Learning Effectiveness</strong>
+            <p>Measuring the transfer and organizational impact of enterprise learning programs across large, complex organizations.</p>
+          </div>
+          <div class="interest-card">
+            <strong>Performance Consulting Practice</strong>
+            <p>How instructional designers function as performance consultants and the competencies required to influence business outcomes.</p>
+          </div>
+          <div class="interest-card">
+            <strong>Technology-Enhanced Learning</strong>
+            <p>The role of emerging technologies — including AI, adaptive learning, and immersive media — in corporate and higher education contexts.</p>
+          </div>
+          <div class="interest-card">
+            <strong>IDT Program Outcomes</strong>
+            <p>Practitioner preparation in graduate IDT programs: competency development, industry alignment, and career readiness.</p>
+          </div>
+          <div class="interest-card">
+            <strong>Evaluation &amp; ROI</strong>
+            <p>Application of the Phillips ROI Methodology and Kirkpatrick Model in organizational settings; barriers to rigorous evaluation practice.</p>
+          </div>
+          <div class="interest-card">
+            <strong>L&amp;D Strategy &amp; Governance</strong>
+            <p>How learning functions are structured, governed, and strategically positioned in Fortune 500 organizations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PUBLICATIONS ===== -->
+    <section class="section section--alt fade-in" id="publications">
+      <div class="container">
+        <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:0.5rem;">
+          <span class="section-label" style="margin:0;">Publications</span>
+          <span class="coming-soon-badge">
+            <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20A10 10 0 0112 2zm1 11V7h-2v6h2zm0 4v-2h-2v2h2"/></svg>
+            Being Updated
+          </span>
+        </div>
+        <h2 class="section-title">Journal Articles &amp; Book Chapters</h2>
+        <div class="divider"></div>
+
+        <div class="pub-card">
+          <div class="pub-card__type">Journal Article — Placeholder</div>
+          <div class="pub-card__title">Title of Peer-Reviewed Article to Be Listed Here</div>
+          <p class="pub-card__meta">Law, M. (Year). Journal Name, Volume(Issue), pages. doi:xxxxx</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Journal Article — Placeholder</div>
+          <div class="pub-card__title">Title of Second Peer-Reviewed Article to Be Listed Here</div>
+          <p class="pub-card__meta">Law, M., &amp; Co-Author, A. (Year). Journal Name, Volume(Issue), pages.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Book Chapter — Placeholder</div>
+          <div class="pub-card__title">Title of Book Chapter to Be Listed Here</div>
+          <p class="pub-card__meta">Law, M. (Year). In Editor, A. (Ed.), Book Title (pp. xx–xx). Publisher.</p>
+        </div>
+
+        <div class="placeholder-box" style="margin-top:1.5rem;">
+          <p>Full publication list coming soon. Contact Dr. Law for a current CV or specific citations.</p>
+          <a href="contact.html" class="btn btn-outline" style="margin-top:1rem;">Request CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRESENTATIONS ===== -->
+    <section class="section fade-in" id="presentations">
+      <div class="container">
+        <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:0.5rem;">
+          <span class="section-label" style="margin:0;">Presentations</span>
+          <span class="coming-soon-badge">
+            <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20A10 10 0 0112 2zm1 11V7h-2v6h2zm0 4v-2h-2v2h2"/></svg>
+            Being Updated
+          </span>
+        </div>
+        <h2 class="section-title">Conference Presentations</h2>
+        <div class="divider"></div>
+
+        <div class="pub-card">
+          <div class="pub-card__type">Conference Presentation — Placeholder</div>
+          <div class="pub-card__title">Title of Conference Presentation to Be Listed Here</div>
+          <p class="pub-card__meta">Law, M. (Year, Month). Conference Name, City, State.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Conference Presentation — Placeholder</div>
+          <div class="pub-card__title">Title of Second Conference Presentation to Be Listed Here</div>
+          <p class="pub-card__meta">Law, M., &amp; Co-Presenter, A. (Year, Month). Conference Name, City, State.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Invited Talk — Placeholder</div>
+          <div class="pub-card__title">Title of Invited Presentation or Workshop</div>
+          <p class="pub-card__meta">Law, M. (Year, Month). Host Organization, City, State.</p>
+        </div>
+
+        <div class="placeholder-box" style="margin-top:1.5rem;">
+          <p>Full presentations list coming soon. Conference history includes ISPI, ATD, AECT, and regional L&amp;D events.</p>
+        </div>
+
+        <hr class="section-divider" />
+
+        <!-- ISPI Highlight -->
+        <h3 style="margin-bottom:1rem;">ISPI Atlanta Chapter Leadership</h3>
+        <div class="card" style="max-width:680px;">
+          <div style="display:flex;gap:1rem;align-items:flex-start;">
+            <div class="card__icon" style="flex-shrink:0;">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <div class="card__title">Vice President of Technology — ISPI Atlanta</div>
+              <p class="card__text">Dr. Law serves as VP of Technology for the International Society for Performance Improvement's Atlanta Chapter, supporting professional development programming and technology resources for L&amp;D practitioners across metro Atlanta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GRANTS ===== -->
+    <section class="section section--alt fade-in" id="grants">
+      <div class="container">
+        <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:0.5rem;">
+          <span class="section-label" style="margin:0;">Grants &amp; Funding</span>
+          <span class="coming-soon-badge">
+            <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20A10 10 0 0112 2zm1 11V7h-2v6h2zm0 4v-2h-2v2h2"/></svg>
+            Being Updated
+          </span>
+        </div>
+        <h2 class="section-title">Grants &amp; Funded Projects</h2>
+        <div class="divider"></div>
+
+        <div class="pub-card">
+          <div class="pub-card__type">Grant — Placeholder</div>
+          <div class="pub-card__title">Title of Grant or Funded Project to Be Listed Here</div>
+          <p class="pub-card__meta">Funding Agency | Award Amount | Project Period: Year–Year | Role: Principal Investigator</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Internal Award — Placeholder</div>
+          <div class="pub-card__title">Title of Internal Funding or Course Development Award</div>
+          <p class="pub-card__meta">Georgia State University | Award Year | Role: Recipient</p>
+        </div>
+
+        <div class="placeholder-box" style="margin-top:1.5rem;">
+          <p>Full grants and funded projects list coming soon. Contact Dr. Law for details on collaborative research or funding opportunities.</p>
+          <a href="contact.html" class="btn btn-outline" style="margin-top:1rem;">Explore Collaboration</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-name">Dr. Mike Law</div>
+          <div class="footer__brand-role">Clinical Associate Professor &amp; Graduate Program Coordinator<br>M.S. Instructional Design &amp; Technology — Georgia State University</div>
+          <p class="footer__brand-desc">Committed to preparing instructional design practitioners who bridge theory and real-world organizational performance.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="program.html">Program</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Connect</div>
+          <div class="footer__links">
+            <a href="https://www.linkedin.com/in/mikelaw" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a>
+            <a href="https://ispi.org" target="_blank" rel="noopener">ISPI Atlanta</a>
+            <a href="contact.html">Send a Message</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="year"></span> Dr. Mike Law. All rights reserved.</span>
+        <span class="footer__gsu">Georgia State University &mdash; Andrew Young School</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

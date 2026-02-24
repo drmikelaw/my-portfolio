@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dr. Mike Law — Clinical Associate Professor and Graduate Program Coordinator, M.S. Instructional Design &amp; Technology at Georgia State University." />
+  <title>Dr. Mike Law | GSU Instructional Design &amp; Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Dr. Mike Law home">
+        <span class="nav__brand-name">Dr. Mike Law</span>
+        <span class="nav__brand-title">Georgia State University</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html" class="nav__cta btn btn-primary">Contact</a>
+      </div>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__text">
+            <span class="hero__tag">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              Georgia State University
+            </span>
+            <h1 class="hero__name">Dr. Mike Law</h1>
+            <p class="hero__role">Clinical Associate Professor &amp; Graduate Program Coordinator<br>M.S. Instructional Design &amp; Technology</p>
+            <div class="hero__divider"></div>
+            <p class="hero__bio">
+              Bridging 25+ years of Fortune 500 corporate learning &amp; development expertise with rigorous academic scholarship. Preparing the next generation of instructional design practitioners through real-world partnerships with industry leaders.
+            </p>
+            <div class="hero__actions">
+              <a href="program.html" class="btn btn-white">Explore the Program</a>
+              <a href="about.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:#fff;">About Dr. Law</a>
+            </div>
+          </div>
+          <div class="hero__photo-wrap">
+            <div class="hero__photo" aria-label="Photo placeholder for Dr. Mike Law">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z"/>
+              </svg>
+              <span>Photo Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-bar">
+      <div class="container">
+        <div class="stats-bar__inner">
+          <div class="stat">
+            <span class="stat__number">25+</span>
+            <span class="stat__label">Years Industry Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">5</span>
+            <span class="stat__label">Fortune 500 Partners</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">M.S.</span>
+            <span class="stat__label">IDT Program</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">VP</span>
+            <span class="stat__label">ISPI Atlanta Technology</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERTISE ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Where Theory Meets Practice</h2>
+        <p class="section-subtitle">A unique academic perspective grounded in decades of enterprise-scale learning solutions.</p>
+        <div class="grid-3">
+          <div class="card fade-in">
+            <div class="card__icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422A12.083 12.083 0 0112 21a12.083 12.083 0 01-6.16-10.422L12 14z"/>
+              </svg>
+            </div>
+            <div class="card__title">Academic Leadership</div>
+            <p class="card__text">Graduate Program Coordinator for the M.S. IDT program at Georgia State University, shaping curriculum and student outcomes.</p>
+          </div>
+          <div class="card fade-in">
+            <div class="card__icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+              </svg>
+            </div>
+            <div class="card__title">Corporate L&amp;D</div>
+            <p class="card__text">25+ years designing and implementing enterprise learning solutions at Fortune 500 organizations across multiple industries.</p>
+          </div>
+          <div class="card fade-in">
+            <div class="card__icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+              </svg>
+            </div>
+            <div class="card__title">Industry Partnerships</div>
+            <p class="card__text">VP of Technology for ISPI Atlanta and active collaborations with The Home Depot, UPS, Delta Air Lines, CDC, and Kimberly-Clark.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARTNERS ===== -->
+    <section class="partners-section section--alt">
+      <div class="container">
+        <p class="partners-title">Corporate Learning Partners</p>
+        <div class="partners-grid">
+          <span class="partner-badge">The Home Depot</span>
+          <span class="partner-badge">UPS</span>
+          <span class="partner-badge">Delta Air Lines</span>
+          <span class="partner-badge">CDC</span>
+          <span class="partner-badge">Kimberly-Clark</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUICK LINKS ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <span class="section-label">Explore</span>
+        <h2 class="section-title">Learn More</h2>
+        <div class="grid-2">
+          <div class="card fade-in" style="display:flex;gap:1.5rem;align-items:flex-start;">
+            <div class="card__icon" style="flex-shrink:0;">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="card__title">M.S. IDT Program</div>
+              <p class="card__text">Explore curriculum highlights, the Corporate Learning Advisory Board, and student outcomes for the M.S. in Instructional Design &amp; Technology.</p>
+              <a href="program.html" class="btn btn-outline" style="margin-top:1rem;padding:0.55rem 1.1rem;font-size:0.85rem;">View Program &rarr;</a>
+            </div>
+          </div>
+          <div class="card fade-in" style="display:flex;gap:1.5rem;align-items:flex-start;">
+            <div class="card__icon" style="flex-shrink:0;">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+            </div>
+            <div>
+              <div class="card__title">Research &amp; Publications</div>
+              <p class="card__text">Browse scholarly publications, conference presentations, and funded research in instructional design, corporate learning, and educational technology.</p>
+              <a href="research.html" class="btn btn-outline" style="margin-top:1rem;padding:0.55rem 1.1rem;font-size:0.85rem;">View Research &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-name">Dr. Mike Law</div>
+          <div class="footer__brand-role">Clinical Associate Professor &amp; Graduate Program Coordinator<br>M.S. Instructional Design &amp; Technology — Georgia State University</div>
+          <p class="footer__brand-desc">Committed to preparing instructional design practitioners who bridge theory and real-world organizational performance.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="program.html">Program</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Connect</div>
+          <div class="footer__links">
+            <a href="https://www.linkedin.com/in/mikelaw" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a>
+            <a href="https://ispi.org" target="_blank" rel="noopener">ISPI Atlanta</a>
+            <a href="contact.html">Send a Message</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="year"></span> Dr. Mike Law. All rights reserved.</span>
+        <span class="footer__gsu">Georgia State University &mdash; Andrew Young School</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
