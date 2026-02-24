@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dr. Mike Law — Research, publications, conference presentations, and grants in instructional design, corporate learning, and educational technology." />
+  <meta name="description" content="Dr. Mike Law — research, peer-reviewed publications, conference presentations, and $80,098 in funded grants in instructional design, digital badging, and corporate learning." />
   <title>Research &amp; Publications | Dr. Mike Law</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,45 +12,10 @@
   <style>
     .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
     .fade-in.visible { opacity: 1; transform: none; }
-    .research-nav {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-    .research-nav a {
-      padding: 0.5rem 1rem;
-      border-radius: var(--radius);
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--text-secondary);
-      border: 1.5px solid var(--gray-mid);
-      transition: all var(--transition);
-    }
-    .research-nav a:hover,
-    .research-nav a.active {
-      color: var(--gsu-blue);
-      border-color: var(--gsu-blue);
-      background: rgba(0,61,165,0.05);
-    }
     .section-divider {
       border: none;
       border-top: 1.5px solid var(--gray-mid);
       margin: 3rem 0;
-    }
-    .coming-soon-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.25rem 0.6rem;
-      background: #fff3e0;
-      border: 1px solid #ffe0b2;
-      border-radius: 20px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #e65100;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
     }
     .interests-grid {
       display: grid;
@@ -68,6 +33,42 @@
     .interest-card:hover { box-shadow: var(--shadow-md); }
     .interest-card strong { display: block; margin-bottom: 0.3rem; color: var(--text-primary); }
     .interest-card p { font-size: 0.85rem; margin: 0; }
+    .grant-card {
+      background: var(--white);
+      border: 1px solid var(--gray-mid);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1rem 1.5rem;
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .grant-year {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--accent);
+      min-width: 38px;
+      text-align: right;
+      padding-top: 2px;
+      flex-shrink: 0;
+    }
+    .grant-title { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.2rem; }
+    .grant-meta { font-size: 0.82rem; color: var(--gray-dark); margin: 0; }
+    .total-grant-bar {
+      background: linear-gradient(135deg, var(--gsu-blue), var(--gsu-blue-dark));
+      border-radius: var(--radius);
+      padding: 1.5rem 2rem;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .total-grant-bar .amount { font-size: 2rem; font-weight: 800; }
+    .total-grant-bar .label { font-size: 0.85rem; opacity: 0.8; }
   </style>
 </head>
 <body>
@@ -99,7 +100,7 @@
       <div class="container">
         <div class="page-hero__label">Scholarship</div>
         <h1 class="page-hero__title">Research &amp; Publications</h1>
-        <p class="page-hero__sub">Scholarly work at the intersection of instructional design, corporate learning, performance improvement, and educational technology.</p>
+        <p class="page-hero__sub">Scholarly work at the intersection of instructional design, digital badging, corporate learning, and educational technology.</p>
       </div>
     </section>
 
@@ -109,31 +110,31 @@
         <span class="section-label">Research Focus</span>
         <h2 class="section-title">Areas of Scholarly Interest</h2>
         <div class="divider"></div>
-        <p style="max-width:640px;margin-bottom:2rem;">Dr. Law's research sits at the boundary of academic scholarship and organizational practice — investigating questions that matter both to the field of instructional design and to the practitioners who apply it.</p>
+        <p style="max-width:640px;margin-bottom:2rem;">Dr. Law's research sits at the boundary of academic scholarship and organizational practice — investigating questions that matter to the field of instructional design and the practitioners who apply it in complex organizational settings.</p>
         <div class="interests-grid">
           <div class="interest-card">
+            <strong>Digital Badging &amp; Micro-Credentialing</strong>
+            <p>Design, implementation, and evaluation of micro-credential systems in corporate and higher education contexts; integration of digital badging into postsecondary credentialing.</p>
+          </div>
+          <div class="interest-card">
             <strong>Corporate Learning Effectiveness</strong>
-            <p>Measuring the transfer and organizational impact of enterprise learning programs across large, complex organizations.</p>
+            <p>Measuring the transfer and organizational impact of enterprise learning programs; ROI evaluation methodology applied at scale.</p>
           </div>
           <div class="interest-card">
             <strong>Performance Consulting Practice</strong>
-            <p>How instructional designers function as performance consultants and the competencies required to influence business outcomes.</p>
+            <p>How instructional designers function as performance consultants and the competencies required to influence business outcomes in Fortune 500 environments.</p>
           </div>
           <div class="interest-card">
             <strong>Technology-Enhanced Learning</strong>
-            <p>The role of emerging technologies — including AI, adaptive learning, and immersive media — in corporate and higher education contexts.</p>
+            <p>The role of emerging technologies — including AI, adaptive learning, AR/VR, and LXD tools — in corporate and higher education contexts.</p>
+          </div>
+          <div class="interest-card">
+            <strong>Electronic Performance Support Systems</strong>
+            <p>EPSS design and implementation; just-in-time learning interventions for complex professional skill acquisition.</p>
           </div>
           <div class="interest-card">
             <strong>IDT Program Outcomes</strong>
-            <p>Practitioner preparation in graduate IDT programs: competency development, industry alignment, and career readiness.</p>
-          </div>
-          <div class="interest-card">
-            <strong>Evaluation &amp; ROI</strong>
-            <p>Application of the Phillips ROI Methodology and Kirkpatrick Model in organizational settings; barriers to rigorous evaluation practice.</p>
-          </div>
-          <div class="interest-card">
-            <strong>L&amp;D Strategy &amp; Governance</strong>
-            <p>How learning functions are structured, governed, and strategically positioned in Fortune 500 organizations.</p>
+            <p>Practitioner preparation in graduate IDT programs: competency development, industry alignment, and career readiness for corporate L&amp;D roles.</p>
           </div>
         </div>
       </div>
@@ -142,35 +143,56 @@
     <!-- ===== PUBLICATIONS ===== -->
     <section class="section section--alt fade-in" id="publications">
       <div class="container">
-        <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:0.5rem;">
-          <span class="section-label" style="margin:0;">Publications</span>
-          <span class="coming-soon-badge">
-            <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20A10 10 0 0112 2zm1 11V7h-2v6h2zm0 4v-2h-2v2h2"/></svg>
-            Being Updated
-          </span>
-        </div>
-        <h2 class="section-title">Journal Articles &amp; Book Chapters</h2>
+        <span class="section-label">Publications</span>
+        <h2 class="section-title">Scholarship &amp; Publications</h2>
         <div class="divider"></div>
 
+        <h3 style="margin-bottom:1rem;font-size:1.05rem;">Book Chapters</h3>
         <div class="pub-card">
-          <div class="pub-card__type">Journal Article — Placeholder</div>
-          <div class="pub-card__title">Title of Peer-Reviewed Article to Be Listed Here</div>
-          <p class="pub-card__meta">Law, M. (Year). Journal Name, Volume(Issue), pages. doi:xxxxx</p>
-        </div>
-        <div class="pub-card">
-          <div class="pub-card__type">Journal Article — Placeholder</div>
-          <div class="pub-card__title">Title of Second Peer-Reviewed Article to Be Listed Here</div>
-          <p class="pub-card__meta">Law, M., &amp; Co-Author, A. (Year). Journal Name, Volume(Issue), pages.</p>
-        </div>
-        <div class="pub-card">
-          <div class="pub-card__type">Book Chapter — Placeholder</div>
-          <div class="pub-card__title">Title of Book Chapter to Be Listed Here</div>
-          <p class="pub-card__meta">Law, M. (Year). In Editor, A. (Ed.), Book Title (pp. xx–xx). Publisher.</p>
+          <div class="pub-card__type">Book Chapter</div>
+          <div class="pub-card__title">Making text meaningful: The role of analogies</div>
+          <p class="pub-card__meta">Glynn, S. M., Law, M. P., &amp; Doster, E. C. (1998). In C. Hynd (Ed.), <em>Learning from text across conceptual domains</em> (pp. 193–208). Erlbaum.</p>
         </div>
 
-        <div class="placeholder-box" style="margin-top:1.5rem;">
-          <p>Full publication list coming soon. Contact Dr. Law for a current CV or specific citations.</p>
-          <a href="contact.html" class="btn btn-outline" style="margin-top:1rem;">Request CV</a>
+        <h3 style="margin-top:2rem;margin-bottom:1rem;font-size:1.05rem;">Refereed Journal Articles</h3>
+        <div class="pub-card">
+          <div class="pub-card__type">Refereed Journal Article</div>
+          <div class="pub-card__title">Performance Improvement in the Literature</div>
+          <p class="pub-card__meta">Gok, A., &amp; Law, M. (2017). <em>Performance Improvement, 56</em>(1), 14–20.</p>
+        </div>
+
+        <h3 style="margin-top:2rem;margin-bottom:1rem;font-size:1.05rem;">Instructional Resources &amp; Media</h3>
+        <div class="pub-card">
+          <div class="pub-card__type">Instructional Resource</div>
+          <div class="pub-card__title">Teaching science with analogies: A resource for teachers and textbook authors</div>
+          <p class="pub-card__meta">Glynn, S. M., Law, M., Gibson, N. M., &amp; Hawkins, C. H. (1998). University of Georgia.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Instructional Video</div>
+          <div class="pub-card__title">Teaching science with models: Building on the textbook</div>
+          <p class="pub-card__meta">Glynn, S. M., &amp; Law, M. P. (1996). [Video]. University of Georgia and University of Maryland, College Park, National Reading Research Center.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Instructional Video</div>
+          <div class="pub-card__title">Teaching science with simulations: Building on the textbook</div>
+          <p class="pub-card__meta">Glynn, S. M., &amp; Law, M. P. (1995). [Video]. University of Georgia and University of Maryland, College Park, National Reading Research Center.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Instructional Video</div>
+          <div class="pub-card__title">Teaching science with analogies: Building on the book</div>
+          <p class="pub-card__meta">Glynn, S. M., &amp; Law, M. (1993). [Video]. University of Georgia and University of Maryland, College Park, National Reading Research Center.</p>
+        </div>
+
+        <h3 style="margin-top:2rem;margin-bottom:1rem;font-size:1.05rem;">Conference Proceedings</h3>
+        <div class="pub-card">
+          <div class="pub-card__type">Conference Proceeding</div>
+          <div class="pub-card__title">Developing Electronic Performance Support Systems for Professionals</div>
+          <p class="pub-card__meta">Law, M. P. (1995). In <em>National Convention of the Association for Educational Communications and Technology</em>. Anaheim, CA.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Conference Proceeding</div>
+          <div class="pub-card__title">Electronic performance support systems: Cognitive 'training wheels' for the acquisition of skilled performance</div>
+          <p class="pub-card__meta">Law, M. (1994). In <em>National Convention of the Association for Educational Communications and Technology</em>. Nashville, TN.</p>
         </div>
       </div>
     </section>
@@ -178,52 +200,59 @@
     <!-- ===== PRESENTATIONS ===== -->
     <section class="section fade-in" id="presentations">
       <div class="container">
-        <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:0.5rem;">
-          <span class="section-label" style="margin:0;">Presentations</span>
-          <span class="coming-soon-badge">
-            <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20A10 10 0 0112 2zm1 11V7h-2v6h2zm0 4v-2h-2v2h2"/></svg>
-            Being Updated
-          </span>
-        </div>
-        <h2 class="section-title">Conference Presentations</h2>
+        <span class="section-label">Presentations</span>
+        <h2 class="section-title">Conference Presentations &amp; Invited Talks</h2>
         <div class="divider"></div>
 
-        <div class="pub-card">
-          <div class="pub-card__type">Conference Presentation — Placeholder</div>
-          <div class="pub-card__title">Title of Conference Presentation to Be Listed Here</div>
-          <p class="pub-card__meta">Law, M. (Year, Month). Conference Name, City, State.</p>
-        </div>
-        <div class="pub-card">
-          <div class="pub-card__type">Conference Presentation — Placeholder</div>
-          <div class="pub-card__title">Title of Second Conference Presentation to Be Listed Here</div>
-          <p class="pub-card__meta">Law, M., &amp; Co-Presenter, A. (Year, Month). Conference Name, City, State.</p>
-        </div>
-        <div class="pub-card">
-          <div class="pub-card__type">Invited Talk — Placeholder</div>
-          <div class="pub-card__title">Title of Invited Presentation or Workshop</div>
-          <p class="pub-card__meta">Law, M. (Year, Month). Host Organization, City, State.</p>
-        </div>
+        <h3 style="margin-bottom:1rem;font-size:1.05rem;">Selected National &amp; International Presentations (2016–2024)</h3>
 
-        <div class="placeholder-box" style="margin-top:1.5rem;">
-          <p>Full presentations list coming soon. Conference history includes ISPI, ATD, AECT, and regional L&amp;D events.</p>
+        <div class="pub-card">
+          <div class="pub-card__type">Symposium Presentation</div>
+          <div class="pub-card__title">Multicriteria Decision Making Practices to Optimize L&amp;D Project Success</div>
+          <p class="pub-card__meta">Law, M. (2024, April). <em>Learning HR &amp; Tech Solutions Conference</em>. Orlando, FL.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Chapter Meeting Presentation</div>
+          <div class="pub-card__title">Optimizing L&amp;D Projects for Success</div>
+          <p class="pub-card__meta">Law, M. (2024, May). <em>ISPI Atlanta Chapter Meeting</em>. Atlanta, GA.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Invited Speaker (Honorarium)</div>
+          <div class="pub-card__title">Experiences Developing Micro-Credentialing/Digital Badging Program for Graduate-Level Credit</div>
+          <p class="pub-card__meta">Law, M. (2020). <em>Brigham Young University, Department of Instructional Psychology &amp; Technology</em>. Salt Lake City, UT.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Chapter Meeting Presentation</div>
+          <div class="pub-card__title">Micro-Credentialing &amp; Digital Badging at GSU</div>
+          <p class="pub-card__meta">Law, M. (2018). <em>ISPI Atlanta Chapter Program Meeting, International Society for Performance Improvement</em>. Atlanta, GA.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Symposium Presentation</div>
+          <div class="pub-card__title">Developing a plan to integrate digital badges into postsecondary credentialing</div>
+          <p class="pub-card__meta">Burns, J. Z. &amp; Law, M. (2017, December). <em>Association for Career and Technical Education</em>. Nashville, TN.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Featured Speaker</div>
+          <div class="pub-card__title">Managing Learning Projects</div>
+          <p class="pub-card__meta">Law, M. (2017). <em>Transformation Through Learning Conference, Delta Air Lines Learning Summit</em>. Atlanta, GA.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-card__type">Featured Speaker — Webinar</div>
+          <div class="pub-card__title">Revolutionary Training Techniques Used by Fortune 1000 Companies</div>
+          <p class="pub-card__meta">Law, M. (2016). <em>Training Magazine Webinar</em>.</p>
         </div>
 
         <hr class="section-divider" />
 
-        <!-- ISPI Highlight -->
-        <h3 style="margin-bottom:1rem;">ISPI Atlanta Chapter Leadership</h3>
-        <div class="card" style="max-width:680px;">
-          <div style="display:flex;gap:1rem;align-items:flex-start;">
-            <div class="card__icon" style="flex-shrink:0;">
-              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
-              </svg>
-            </div>
-            <div>
-              <div class="card__title">Vice President of Technology — ISPI Atlanta</div>
-              <p class="card__text">Dr. Law serves as VP of Technology for the International Society for Performance Improvement's Atlanta Chapter, supporting professional development programming and technology resources for L&amp;D practitioners across metro Atlanta.</p>
-            </div>
-          </div>
+        <h3 style="margin-bottom:1rem;font-size:1.05rem;">Additional Conference Presentations (1994–2014)</h3>
+        <p style="margin-bottom:1.25rem;font-size:0.9rem;color:var(--text-secondary);">Complete presentation history available upon request. Selected venues include:</p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1rem;">
+          <span class="tag">Learning Solutions Conference, Boston (2014)</span>
+          <span class="tag">Learning, Design &amp; Technology Conference, UGA (2012)</span>
+          <span class="tag">ATD eLearning SIG (2009)</span>
+          <span class="tag">TechLearn Conference, Orlando (2003)</span>
+          <span class="tag">Int'l Performance Improvement Conference, Long Beach (1999)</span>
+          <span class="tag">AERA Annual Conference, Chicago (1997)</span>
         </div>
       </div>
     </section>
@@ -231,30 +260,78 @@
     <!-- ===== GRANTS ===== -->
     <section class="section section--alt fade-in" id="grants">
       <div class="container">
-        <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:0.5rem;">
-          <span class="section-label" style="margin:0;">Grants &amp; Funding</span>
-          <span class="coming-soon-badge">
-            <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20A10 10 0 0112 2zm1 11V7h-2v6h2zm0 4v-2h-2v2h2"/></svg>
-            Being Updated
-          </span>
-        </div>
-        <h2 class="section-title">Grants &amp; Funded Projects</h2>
+        <span class="section-label">Grants &amp; Funding</span>
+        <h2 class="section-title">Grants &amp; External Funding</h2>
         <div class="divider"></div>
 
-        <div class="pub-card">
-          <div class="pub-card__type">Grant — Placeholder</div>
-          <div class="pub-card__title">Title of Grant or Funded Project to Be Listed Here</div>
-          <p class="pub-card__meta">Funding Agency | Award Amount | Project Period: Year–Year | Role: Principal Investigator</p>
-        </div>
-        <div class="pub-card">
-          <div class="pub-card__type">Internal Award — Placeholder</div>
-          <div class="pub-card__title">Title of Internal Funding or Course Development Award</div>
-          <p class="pub-card__meta">Georgia State University | Award Year | Role: Recipient</p>
+        <div class="total-grant-bar">
+          <div>
+            <div class="amount">$80,098</div>
+            <div class="label">Total Student Technology Fee Awards</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-weight:700;font-size:1rem;">FY2019–FY2025</div>
+            <div style="font-size:0.82rem;opacity:0.75;">150+ students benefited &middot; Articulate 360 Studio licenses</div>
+          </div>
         </div>
 
-        <div class="placeholder-box" style="margin-top:1.5rem;">
-          <p>Full grants and funded projects list coming soon. Contact Dr. Law for details on collaborative research or funding opportunities.</p>
-          <a href="contact.html" class="btn btn-outline" style="margin-top:1rem;">Explore Collaboration</a>
+        <h3 style="margin-bottom:1.25rem;font-size:1.05rem;">University Internal Grant Awards</h3>
+
+        <div class="grant-card">
+          <span class="grant-year">FY25</span>
+          <div>
+            <div class="grant-title">GSU Student Technology Fee Award with Supplemental Funding from DLS — $18,200</div>
+            <p class="grant-meta">Law, M. Funded 27 licenses for Articulate 360 Studio for students enrolled in LT 8360 eLearning Design and LT 8400 Advanced eLearning Design.</p>
+          </div>
+        </div>
+        <div class="grant-card">
+          <span class="grant-year">FY24</span>
+          <div>
+            <div class="grant-title">GSU Student Technology Fee Award — $18,873</div>
+            <p class="grant-meta">Law, M. Funded 27 licenses for Articulate 360 Studio for students enrolled in LT 8360 and LT 8400.</p>
+          </div>
+        </div>
+        <div class="grant-card">
+          <span class="grant-year">FY23</span>
+          <div>
+            <div class="grant-title">GSU Student Technology Fee Award — $18,873</div>
+            <p class="grant-meta">Law, M. Funded 30 licenses for Articulate 360 Studio for students enrolled in LT 8360 and LT 8400.</p>
+          </div>
+        </div>
+        <div class="grant-card">
+          <span class="grant-year">FY22</span>
+          <div>
+            <div class="grant-title">GSU Student Technology Fee Award — $9,052</div>
+            <p class="grant-meta">Law, M. Funded Articulate 360 for students enrolled in LT 8360 and LT 8400.</p>
+          </div>
+        </div>
+        <div class="grant-card">
+          <span class="grant-year">2020</span>
+          <div>
+            <div class="grant-title">GSU Student Technology Fee Grant Award — $8,500</div>
+            <p class="grant-meta">Law, M. Expanded eLearning Development Suite from 6 to 15 seats for students enrolled in LT 8360 and LT 8400.</p>
+          </div>
+        </div>
+        <div class="grant-card">
+          <span class="grant-year">2019</span>
+          <div>
+            <div class="grant-title">GSU Student Technology Fee Grant Award — $6,500</div>
+            <p class="grant-meta">Law, M. Funded Articulate 360 for students enrolled in LT 8360 and LT 8400.</p>
+          </div>
+        </div>
+
+        <hr class="section-divider" />
+
+        <!-- Digital Badging highlight -->
+        <h3 style="margin-bottom:1rem;">Professional Development Initiative: Digital Badging &amp; Micro-Credentialing</h3>
+        <div class="card" style="max-width:760px;">
+          <p style="margin-bottom:1rem;">Developed and deployed an accelerated digital badging curriculum and infrastructure for corporate learning cohorts. Successfully implemented at Delta Air Lines for two consecutive years with a <strong>100% completion rate</strong> across three micro-credentials:</p>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+            <span class="tag">LT 8151: Planning Projects (Digital Badge)</span>
+            <span class="tag">LT 8152: Leading Projects (Digital Badge)</span>
+            <span class="tag">LT 8153: Consulting Skills (Digital Badge)</span>
+          </div>
+          <p style="margin:0;font-size:0.88rem;color:var(--text-secondary);">Served as consultant to multiple GSU departments on digital badging program development, including Robinson College of Business Entrepreneurship Education Program, Adult Literacy Research Center, CINEMA Program at Crim Center, and Best Practices Training Initiative.</p>
         </div>
       </div>
     </section>
@@ -266,8 +343,8 @@
     <div class="container">
       <div class="footer__top">
         <div>
-          <div class="footer__brand-name">Dr. Mike Law</div>
-          <div class="footer__brand-role">Clinical Associate Professor &amp; Graduate Program Coordinator<br>M.S. Instructional Design &amp; Technology — Georgia State University</div>
+          <div class="footer__brand-name">Michael Patrick Law, Ph.D.</div>
+          <div class="footer__brand-role">Clinical Associate Professor &amp; Graduate Program Coordinator<br>M.S. Instructional Design &amp; Technology &mdash; Department of Learning Sciences, Georgia State University</div>
           <p class="footer__brand-desc">Committed to preparing instructional design practitioners who bridge theory and real-world organizational performance.</p>
         </div>
         <div>
@@ -284,15 +361,15 @@
           <div class="footer__heading">Connect</div>
           <div class="footer__links">
             <a href="https://www.linkedin.com/in/mikelaw" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://www.gsu.edu" target="_blank" rel="noopener">Georgia State University</a>
+            <a href="https://education.gsu.edu" target="_blank" rel="noopener">Georgia State University</a>
             <a href="https://ispi.org" target="_blank" rel="noopener">ISPI Atlanta</a>
             <a href="contact.html">Send a Message</a>
           </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <span>&copy; <span id="year"></span> Dr. Mike Law. All rights reserved.</span>
-        <span class="footer__gsu">Georgia State University &mdash; Andrew Young School</span>
+        <span>&copy; <span id="year"></span> Michael Patrick Law, Ph.D. All rights reserved.</span>
+        <span class="footer__gsu">Department of Learning Sciences &mdash; Georgia State University</span>
       </div>
     </div>
   </footer>
