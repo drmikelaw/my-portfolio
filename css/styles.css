@@ -412,6 +412,8 @@ p:last-child { margin-bottom: 0; }
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
