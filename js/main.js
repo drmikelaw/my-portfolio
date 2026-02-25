@@ -45,10 +45,17 @@
   }
 
   // ---------- Active nav link ----------
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const pathname = window.location.pathname;
+  let currentPage;
+  if (!pathname || pathname === '/' || pathname.endsWith('/')) {
+    currentPage = 'index.html';
+  } else {
+    currentPage = pathname.split('/').pop();
+  }
+
   document.querySelectorAll('.nav__links a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === currentPage) {
       link.classList.add('active');
     }
   });
