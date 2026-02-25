@@ -221,10 +221,21 @@ p:last-child { margin-bottom: 0; }
   white-space: nowrap;
 }
 
-.nav__links a:hover,
-.nav__links a.active {
+.nav__links a:hover {
   color: var(--gsu-blue);
   background: rgba(0, 61, 165, 0.07);
+}
+
+.nav__links a.active {
+  color: var(--gsu-blue);
+  font-weight: 700;
+  background: rgba(0, 61, 165, 0.07);
+  box-shadow: inset 0 -2px 0 var(--gsu-blue);
+}
+
+/* Don't apply underline to the CTA button — it has its own visual treatment */
+.nav__links a.nav__cta.active {
+  box-shadow: none;
 }
 
 .nav__cta {
@@ -884,6 +895,16 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   .nav__links a {
     padding: 0.75rem 1rem;
     border-radius: var(--radius);
+  }
+
+  .nav__links a.active {
+    box-shadow: inset 3px 0 0 var(--gsu-blue);
+    padding-left: 1.25rem;
+  }
+
+  .nav__links a.nav__cta.active {
+    box-shadow: none;
+    padding-left: 1rem;
   }
 
   .nav__cta { margin-left: 0; }
