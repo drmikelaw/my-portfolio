@@ -233,16 +233,6 @@ p:last-child { margin-bottom: 0; }
   border-bottom: 3px solid #003DA5;
 }
 
-/* CTA button active: white outline ring instead of underline */
-.nav__links a.nav__cta.active {
-  border-bottom: 3px solid transparent;
-  outline: 2px solid rgba(255, 255, 255, 0.85);
-  outline-offset: 2px;
-}
-
-.nav__cta {
-  margin-left: 0.5rem;
-}
 
 /* Mobile hamburger */
 .nav__toggle {
