@@ -416,27 +416,13 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ---------- Program Students Feature Image ---------- */
-.program-feature-img-wrap {
-  padding: 0 1.5rem 56px;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
 .program-feature-img {
-  width: 75%;
-  height: auto;               /* natural aspect ratio — no cropping */
+  width: 100%;
+  height: auto;
   border-radius: 12px;
   display: block;
-  margin: 0 auto;
   box-shadow: var(--shadow-lg);
-}
-
-@media (max-width: 768px) {
-  .program-feature-img {
-    width: 100%;              /* full width on mobile */
-  }
+  margin-bottom: 2rem;
 }
 
 /* ---------- Bio / About page headshot ---------- */
