@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Partnerships &amp; Community — M.S. Instructional Design &amp; Technology at Georgia State University. Learning Leaders Advisory Board and corporate internship partnerships." />
+  <title>Partnerships | Dr. Mike Law</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    .partner-img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      display: block;
+    }
+
+    .partnership-stats {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .partnership-stat {
+      flex: 1;
+      min-width: 130px;
+      padding: 1rem 1.25rem;
+      background: rgba(0, 61, 165, 0.05);
+      border-left: 3px solid var(--gsu-blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .partnership-stat__number {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--gsu-blue);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+
+    .partnership-stat__label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray-dark);
+    }
+
+    .partner-org-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .partner-org-card {
+      padding: 1.25rem 1.5rem;
+      background: var(--white);
+      border: 2px solid rgba(0, 61, 165, 0.18);
+      border-radius: var(--radius);
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      transition: all var(--transition);
+    }
+
+    .partner-org-card:hover {
+      border-color: var(--gsu-blue);
+      color: var(--gsu-blue);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cta-banner {
+      background: linear-gradient(135deg, var(--gsu-blue) 0%, var(--gsu-blue-dark) 100%);
+      border-radius: 12px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .cta-banner h2 { color: var(--white); margin-bottom: 0.75rem; }
+    .cta-banner p { color: rgba(255, 255, 255, 0.85); max-width: 520px; margin: 0 auto 1.75rem; }
+
+    @media (max-width: 768px) {
+      .partner-img { height: 240px; }
+      .partnership-stats { gap: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Dr. Mike Law home">
+        <span class="nav__brand-name">Dr. Mike Law</span>
+        <span class="nav__brand-title">Georgia State University</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="partnerships.html" class="active">Partnerships</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__label">Industry &amp; Community</div>
+        <h1 class="page-hero__title">Partnerships &amp; Community</h1>
+        <p class="page-hero__sub">Building bridges between academic excellence and industry innovation — connecting graduate students with the organizations shaping the future of workplace learning.</p>
+      </div>
+    </section>
+
+    <!-- ===== ADVISORY BOARD ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <div class="grid-2" style="gap:3.5rem;align-items:center;">
+          <div>
+            <img
+              class="partner-img"
+              src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1200"
+              alt="Professional advisory board meeting in an academic setting"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <span class="section-label">Industry Advisory</span>
+            <h2 class="section-title">Learning Leaders Advisory Board</h2>
+            <div class="divider"></div>
+            <p>The Learning Leaders Advisory Board brings together senior learning and development leaders from Fortune 500 companies to inform curriculum development, share emerging industry trends, and create pathways between academic preparation and professional practice.</p>
+            <p style="margin-top:1rem;">Board members contribute guest instruction, practicum opportunities, and real-world project engagement — ensuring the M.S. IDT program remains tightly aligned with the competencies most sought after by leading organizations.</p>
+            <div class="partnership-stats">
+              <div class="partnership-stat">
+                <div class="partnership-stat__number">6+</div>
+                <div class="partnership-stat__label">Fortune 500 Partners</div>
+              </div>
+              <div class="partnership-stat">
+                <div class="partnership-stat__number">2&times;</div>
+                <div class="partnership-stat__label">Annual Advisory Sessions</div>
+              </div>
+              <div class="partnership-stat">
+                <div class="partnership-stat__number">8+</div>
+                <div class="partnership-stat__label">Years of Partnership</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTERNSHIP PARTNERSHIPS ===== -->
+    <section class="section section--alt fade-in">
+      <div class="container">
+        <div class="grid-2" style="gap:3.5rem;align-items:center;">
+          <div>
+            <span class="section-label">Student Opportunities</span>
+            <h2 class="section-title">Corporate Internship Partnerships</h2>
+            <div class="divider"></div>
+            <p>Since 2019, the M.S. IDT program has facilitated 100+ student internship placements with major organizations including The Home Depot, UPS, Delta Air Lines, AT&T, and TrainingPros. These immersive, hands-on experiences allow students to apply instructional design principles in real enterprise learning environments.</p>
+            <p style="margin-top:1rem;">The Home Depot partnership has been particularly productive — achieving a 67% hire conversion rate as interns transition directly into full-time learning and development roles upon graduation.</p>
+            <div class="partnership-stats">
+              <div class="partnership-stat">
+                <div class="partnership-stat__number">100+</div>
+                <div class="partnership-stat__label">Placements Since 2019</div>
+              </div>
+              <div class="partnership-stat">
+                <div class="partnership-stat__number">67%</div>
+                <div class="partnership-stat__label">Hire Conversion at Home Depot</div>
+              </div>
+              <div class="partnership-stat">
+                <div class="partnership-stat__number">6+</div>
+                <div class="partnership-stat__label">Fortune 500 Partners</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="partner-img"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200"
+              alt="Students collaborating with professionals in a modern corporate learning environment"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARTNER ORGANIZATIONS ===== -->
+    <section class="section fade-in">
+      <div class="container" style="text-align:center;">
+        <span class="section-label">Our Partners</span>
+        <h2 class="section-title">Partner Organizations</h2>
+        <div class="divider" style="margin:0 auto 2.5rem;"></div>
+        <div class="partner-org-grid">
+          <div class="partner-org-card">The Home Depot</div>
+          <div class="partner-org-card">Delta Air Lines</div>
+          <div class="partner-org-card">UPS</div>
+          <div class="partner-org-card">AT&amp;T</div>
+          <div class="partner-org-card">TrainingPros</div>
+          <div class="partner-org-card">Leading Learning &amp; Development Consultants</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section fade-in">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Interested in Partnering with the M.S. IDT Program?</h2>
+          <p>Contact us to learn about Advisory Board membership and internship partnership opportunities.</p>
+          <a href="contact.html" class="btn btn-white">Contact Dr. Law</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-name">Michael Patrick Law, Ph.D.</div>
+          <div class="footer__brand-role">Clinical Associate Professor &amp; Graduate Program Coordinator<br>M.S. Instructional Design &amp; Technology &mdash; Department of Learning Sciences, Georgia State University</div>
+          <p class="footer__brand-desc">Committed to preparing instructional design practitioners who bridge theory and real-world organizational performance.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="program.html">Program</a>
+            <a href="partnerships.html">Partnerships</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Connect</div>
+          <div class="footer__links">
+            <a href="https://www.linkedin.com/in/drmikelaw/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://education.gsu.edu/ls/" target="_blank" rel="noopener">Georgia State University</a>
+            <a href="https://ispi.org" target="_blank" rel="noopener">ISPI Atlanta</a>
+            <a href="contact.html">Send a Message</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="year"></span> Michael Patrick Law, Ph.D. All rights reserved.</span>
+        <span class="footer__gsu">Department of Learning Sciences &mdash; Georgia State University</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
