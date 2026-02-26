@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">emailjs.init("JjjJQW2D9tOkgYZWI");</script>
   <style>
     .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
     .fade-in.visible { opacity: 1; transform: none; }
@@ -162,11 +164,11 @@
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="name">Full Name <span style="color:#e53e3e;">*</span></label>
-                  <input class="form-control" type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+                  <input class="form-control" type="text" id="name" name="from_name" placeholder="Your full name" required autocomplete="name" />
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="email">Email Address <span style="color:#e53e3e;">*</span></label>
-                  <input class="form-control" type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                  <input class="form-control" type="email" id="email" name="from_email" placeholder="your@email.com" required autocomplete="email" />
                 </div>
               </div>
 
@@ -199,7 +201,10 @@
             </form>
 
             <div id="form-success" class="form-success" role="alert" tabindex="-1">
-              Thank you — your message has been received. Dr. Law will be in touch within 2–3 business days.
+              Thank you! Your message has been sent successfully.
+            </div>
+            <div id="form-error" class="form-error" role="alert" tabindex="-1">
+              Sorry, something went wrong. Please try again or email <a href="mailto:mlaw@gsu.edu">mlaw@gsu.edu</a> directly.
             </div>
           </div>
 

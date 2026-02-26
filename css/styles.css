@@ -755,6 +755,17 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   margin-top: 1rem;
 }
 
+.form-error {
+  display: none;
+  background: #fff3f3;
+  border: 1px solid #f5c6c6;
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  color: #c0392b;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
 /* ---------- Footer ---------- */
 .footer {
   background: #0b1120;

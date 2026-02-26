@@ -45,41 +45,39 @@
   }
 
 
-  // ---------- Netlify contact form ----------
+  // ---------- Contact form (EmailJS) ----------
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
+    contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const btn = contactForm.querySelector('[type="submit"]');
       const successEl = document.getElementById('form-success');
+      const errorEl = document.getElementById('form-error');
       const originalText = btn.textContent;
 
       btn.disabled = true;
       btn.textContent = 'Sending…';
+      if (successEl) successEl.style.display = 'none';
+      if (errorEl) errorEl.style.display = 'none';
 
-      try {
-        const data = new FormData(contactForm);
-        const response = await fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(data).toString(),
-        });
-
-        if (response.ok) {
+      emailjs.sendForm('service_uxypmcm', 'template_q2aza4g', contactForm)
+        .then(() => {
           contactForm.reset();
           if (successEl) {
             successEl.style.display = 'block';
             successEl.focus();
           }
-        } else {
-          throw new Error('Network response was not ok');
-        }
-      } catch {
-        alert('There was an error submitting the form. Please try emailing directly at mlaw@gsu.edu.');
-      } finally {
-        btn.disabled = false;
-        btn.textContent = originalText;
-      }
+        })
+        .catch(() => {
+          if (errorEl) {
+            errorEl.style.display = 'block';
+            errorEl.focus();
+          }
+        })
+        .finally(() => {
+          btn.disabled = false;
+          btn.textContent = originalText;
+        });
     });
   }
 
