@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Works and experiments by Dr. Mike Law: AI-assisted video, interactive learning, and design explorations." />
+<title>Works | Dr. Mike Law</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<nav class="nav" role="navigation" aria-label="Main navigation">
+<div class="nav__inner">
+<a href="index.html" class="nav__brand" aria-label="Dr. Mike Law home">
+<span class="nav__brand-name">Dr. Mike Law</span>
+<span class="nav__brand-title">Georgia State University</span>
+</a>
+<div class="nav__links" id="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="program.html">Program</a>
+<a href="partnerships.html">Partnerships</a>
+<a href="research.html">Research</a> <a href="works.html" class="active">Works</a>
+<a href="contact.html">Contact</a>
+</div>
+<button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
+<main class="page-content">
+<section class="page-hero">
+<div class="container">
+<div class="page-hero__label">Works</div>
+<h1 class="page-hero__title">Experiments &amp; Creative Work</h1>
+<p class="page-hero__sub">A sandbox for testing new tools in content, design, and development for my courses and program marketing.</p>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<span class="section-label">Featured</span>
+<h2 class="section-title">AI-Assisted Video</h2>
+<p class="section-subtitle">Short narrated pieces built with code-driven motion graphics, generative B-roll, and synthetic voiceover.</p>
+<div class="grid-3">
+<a href="ready-on-day-one/" class="card" style="display:block;color:inherit;">
+<img src="ready-on-day-one/poster_1.jpg" alt="Ready on Day One video preview" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin-bottom:1rem;" loading="lazy" />
+<div class="card__title">Ready on Day One</div>
+<p class="card__text">A 105-second story about weaving AI-assisted instructional design into the M.S. IDT curriculum, including responsible, ethical, and self-reported AI use.</p>
+</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer__top">
+<div>
+<div class="footer__brand-name">Mike Law, Ph.D.</div>
+<div class="footer__brand-role">Clinical Associate Professor &amp; Graduate Program Coordinator<br>M.S. Instructional Design &amp; Technology &mdash; Department of Learning Sciences, Georgia State University</div>
+<p class="footer__brand-desc">Committed to preparing instructional design practitioners who bridge theory and real-world organizational performance.</p>
+</div>
+<div>
+<div class="footer__heading">Navigation</div>
+<div class="footer__links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="program.html">Program</a>
+<a href="partnerships.html">Partnerships</a>
+<a href="research.html">Research</a>
+<a href="works.html">Works</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<div>
+<div class="footer__heading">Connect</div>
+<div class="footer__links">
+<a href="https://www.linkedin.com/in/drmikelaw/" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://education.gsu.edu" target="_blank" rel="noopener">Georgia State University</a>
+<a href="https://ispi.org" target="_blank" rel="noopener">ISPI Atlanta</a>
+<a href="contact.html">Send a Message</a>
+</div>
+</div>
+</div>
+<div class="footer__bottom">
+<span>&copy; <span id="year"></span> Mike Law, Ph.D. All rights reserved.</span>
+<span class="footer__gsu">Department of Learning Sciences &mdash; Georgia State University</span>
+</div>
+</div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
