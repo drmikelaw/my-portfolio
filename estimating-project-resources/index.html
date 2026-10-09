@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estimating Project Resources | Dr. Mike Law · Experiments</title>
+<meta name="description" content="A 5:48 whiteboard-animation lesson on estimating project resources, built for LT 8150 in Georgia State University's M.S. Instructional Design &amp; Technology program.">
+<meta property="og:title" content="Estimating Project Resources">
+<meta property="og:description" content="A 5:48 whiteboard-animation lesson for LT 8150, built with a custom code-driven whiteboard engine.">
+<meta property="og:type" content="video.other">
+<meta property="og:image" content="https://drmikelaw.com/estimating-project-resources/poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--bg:#070b16;--panel:#0d1424;--line:#1c2742;--text:#eaf0fb;--mute:#9aa8c4;--teal:#2de2c4;--blue:#4f7cff;--violet:#9b6bff}
+*{box-sizing:border-box}
+html{color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+background-image:radial-gradient(900px 500px at 15% -10%,rgba(45,226,196,.12),transparent 60%),radial-gradient(800px 500px at 100% 0,rgba(155,107,255,.12),transparent 60%);background-repeat:no-repeat}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:15px;color:var(--mute)}
+header a{color:var(--mute);text-decoration:none}header a:hover{color:var(--teal)}
+header strong{color:var(--text);font-weight:600}
+.eyebrow{font:600 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin:28px 0 14px}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.08;margin:0 0 14px;letter-spacing:-.02em}
+h1 span{background:linear-gradient(90deg,var(--teal),var(--blue) 60%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--mute);max-width:700px;margin:0 0 28px}
+.player{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+video{display:block;width:100%;height:auto;aspect-ratio:16/9}
+.meta{display:flex;gap:18px;flex-wrap:wrap;color:var(--mute);font-size:14px;margin:12px 2px 0}
+.meta a{color:var(--teal);text-decoration:none}.meta a:hover{text-decoration:underline}
+h2{font-size:22px;margin:52px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.card h3{margin:0 0 8px;font-size:15px;color:var(--teal);font-family:ui-monospace,Menlo,monospace;letter-spacing:.06em;text-transform:uppercase}
+.card ul{margin:0;padding-left:18px;color:var(--mute);font-size:15px}
+ol.steps{margin:0;padding-left:22px;color:var(--mute)}
+ol.steps li{margin:6px 0}ol.steps b{color:var(--text);font-weight:600}
+.note{margin-top:40px;padding:18px 20px;border-left:3px solid var(--violet);background:rgba(155,107,255,.07);border-radius:0 12px 12px 0;color:var(--mute);font-size:15px}
+footer{padding:48px 0 40px;color:var(--mute);font-size:14px;border-top:1px solid var(--line);margin-top:56px}
+footer a{color:var(--mute)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<strong>Dr. Mike Law · Experiments</strong>
+<a href="https://drmikelaw.com/works.html">&larr; drmikelaw.com</a>
+</header>
+<div class="eyebrow">Experiment · Code-driven whiteboard animation</div>
+<h1>Estimating <span>Project Resources</span></h1>
+<p class="lede">A 5:48 whiteboard-animation lesson built for LT 8150, Project Management for Instructional Designers, in the Georgia State University M.S. Instructional Design &amp; Technology program. It walks through three segments: bottom-up resource estimating, rolling work packages up into a project total, and converting effort into calendar duration.</p>
+<div class="player">
+<video controls playsinline preload="metadata" poster="poster.jpg">
+<source src="estimating-project-resources.mp4" type="video/mp4">
+Your browser doesn't support embedded video. <a href="estimating-project-resources.mp4">Download the video</a>.
+</video>
+</div>
+<div class="meta"><span>5:48</span><span>Narrated lesson</span><a href="estimating-project-resources.mp4" download>Download MP4</a></div>
+<h2>How it was made</h2>
+<p class="lede" style="margin-bottom:18px">Another sandbox project: a repeatable pipeline for course videos where every scene is a small configuration file, so a corrected number or reworded line is a quick edit and a re-render.</p>
+<div class="grid">
+<div class="card"><h3>Whiteboard engine</h3><ul><li>Custom engine in HTML, SVG, and JavaScript with GSAP timelines</li><li>Hand-drawn doodle library (clipboards, calendars, hourglasses, magnifiers) drawn stroke by stroke by an animated marker</li></ul></div>
+<div class="card"><h3>Render &amp; assembly</h3><ul><li>Deterministic frame-by-frame rendering in headless Chromium</li><li>FFmpeg for encoding, segment joins, and a 2-second dissolve, with audio kept in sync across every cut</li></ul></div>
+<div class="card"><h3>Splash &amp; sound</h3><ul><li>Reusable 4-second branded splash with fly-in type, screen shake, and particle bursts; the course name is one line of config</li><li>Python (NumPy/SciPy) for synthesized music and sound effects timed to each hit</li></ul></div>
+<div class="card"><h3>Timing</h3><ul><li>Narration aligned to the drawings by audio analysis, so each number and label appears as it is spoken</li></ul></div>
+</div>
+<h2>The process</h2>
+<ol class="steps">
+<li><b>Define</b> the learning goal and the three-segment structure.</li>
+<li><b>Script</b> each scene with example numbers a student can follow.</li>
+<li><b>Configure</b> each scene and draw its doodles with the whiteboard engine.</li>
+<li><b>Time</b> the drawings to the narration, then render and review frame by frame.</li>
+<li><b>Assemble</b> the branded splash, segment slides, and lessons into one master.</li>
+<li><b>Review, fix, and re-render</b> with a human making every instructional and editorial call.</li>
+</ol>
+<div class="note">In short: a one-command rebuild from idea to polished, brand-consistent course video, with the same framework reusable across courses.</div>
+<footer>
+&copy; 2026 Mike Law, Ph.D. &middot; Clinical Associate Professor and Graduate Program Coordinator, M.S. Instructional Design &amp; Technology, Georgia State University &middot; <a href="https://drmikelaw.com">drmikelaw.com</a>
+</footer>
+</div>
+</body>
+</html>
