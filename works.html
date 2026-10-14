@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Works and experiments by Dr. Mike Law: AI-assisted video, interactive learning, and design explorations." />
+<meta name="description" content="Custom course content and experiments by Dr. Mike Law: narrated lessons for M.S. IDT courses, AI-assisted video, and design explorations." />
 <title>Works | Dr. Mike Law</title>
 <meta property="og:title" content="Works | Dr. Mike Law" />
-<meta property="og:description" content="Works and experiments by Dr. Mike Law: AI-assisted video, interactive learning, and design explorations." />
+<meta property="og:description" content="Custom course content and experiments by Dr. Mike Law: narrated lessons for M.S. IDT courses, AI-assisted video, and design explorations." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://drmikelaw.com/works.html" />
 <meta property="og:image" content="https://drmikelaw.com/assets/images/works-share.jpg" />
@@ -15,6 +15,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
+<style>
+.works-jump{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.works-jump__alt{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.works-jump__alt:hover{background:rgba(255,255,255,.12);color:#fff;border-color:#fff}
+.works-anchor{scroll-margin-top:calc(var(--nav-height) + 8px)}
+.works-course{font-size:1.1rem;margin:2.25rem 0 1rem;color:var(--text-primary)}
+.section-subtitle + .works-course{margin-top:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
 <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -40,36 +50,63 @@
 <section class="page-hero">
 <div class="container">
 <div class="page-hero__label">Works</div>
-<h1 class="page-hero__title">Experiments &amp; Creative Work</h1>
-<p class="page-hero__sub">A sandbox for testing new tools in content, design, and development for my courses and program marketing.</p>
+<h1 class="page-hero__title">Course Content &amp; Experiments</h1>
+<p class="page-hero__sub">Finished lessons built for my M.S. IDT courses, plus a sandbox for testing new tools in content, design, and development.</p>
+<div class="works-jump">
+<a href="#course-content" class="btn btn-white">Custom Course Content</a>
+<a href="#experiments" class="btn works-jump__alt">Experiments &amp; Creative Work</a>
+</div>
 </div>
 </section>
-<section class="section">
+<section class="section works-anchor" id="course-content">
 <div class="container">
-<span class="section-label">Featured</span>
+<span class="section-label">Custom Course Content</span>
+<h2 class="section-title">Lessons Built for My Courses</h2>
+<p class="section-subtitle">Narrated lessons designed and produced for courses in the Georgia State University M.S. Instructional Design &amp; Technology program, grouped by course.</p>
+<h3 class="works-course">LT 7100 &middot; Instructional Design</h3>
+<div class="grid-3">
+<a href="selecting-creating-media/" class="card" style="display:block;color:inherit;">
+<img src="selecting-creating-media/poster.jpg" alt="Selecting and Creating Media to Support Instruction video preview" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin-bottom:1rem;" loading="lazy" />
+<span class="tag" style="margin:0 0 .6rem;">LT 7100</span>
+<div class="card__title">Selecting &amp; Creating Media to Support Instruction</div>
+<p class="card__text">A 4-minute explainer on choosing media by the cognitive work it does for the learner, grounded in Mayer's multimedia principles, with guidance on creating media with AI in the room.</p>
+</a>
+<a href="media-alignment/" class="card" style="display:block;color:inherit;">
+<img src="media-alignment/poster.jpg" alt="How to Recognize Instructional Media Alignment with Learning Goals video preview" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin-bottom:1rem;" loading="lazy" />
+<span class="tag" style="margin:0 0 .6rem;">LT 7100</span>
+<div class="card__title">How to Recognize Media Alignment with Learning Goals</div>
+<p class="card__text">The companion video: what alignment means, three signs that media only looks aligned, and how to check media against the objective and its performance conditions.</p>
+</a>
+</div>
+<h3 class="works-course">LT 8150 &middot; Planning Learning Development Projects</h3>
+<div class="grid-3">
+<a href="estimating-project-resources/" class="card" style="display:block;color:inherit;">
+<img src="estimating-project-resources/poster.jpg" alt="Estimating Project Resources video preview" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin-bottom:1rem;" loading="lazy" />
+<span class="tag" style="margin:0 0 .6rem;">LT 8150</span>
+<div class="card__title">Estimating Project Resources</div>
+<p class="card__text">A 5:48 whiteboard-animation lesson on bottom-up estimating, rolling up work packages, and converting effort to calendar duration, built with a custom code-driven whiteboard engine.</p>
+</a>
+</div>
+</div>
+</section>
+<section class="section section--alt works-anchor" id="experiments">
+<div class="container">
+<span class="section-label">Experiments &amp; Creative Work</span>
 <h2 class="section-title">AI-Assisted Video</h2>
-<p class="section-subtitle">Short pieces built with code-driven motion graphics, generative video, and AI-assisted audio and music.</p>
+<p class="section-subtitle">Short pieces and tool tests built with code-driven motion graphics, generative video, and AI-assisted audio and music.</p>
 <div class="grid-3">
 <a href="ready-on-day-one/" class="card" style="display:block;color:inherit;">
 <img src="ready-on-day-one/poster_1.jpg" alt="Ready on Day One video preview" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin-bottom:1rem;" loading="lazy" />
 <div class="card__title">Ready on Day One</div>
 <p class="card__text">A 105-second story about weaving AI-assisted instructional design into the M.S. IDT curriculum, including responsible, ethical, and self-reported AI use.</p>
 </a>
-<a href="estimating-project-resources/" class="card" style="display:block;color:inherit;">
-<img src="estimating-project-resources/poster.jpg" alt="Estimating Project Resources video preview" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin-bottom:1rem;" loading="lazy" />
-<div class="card__title">Estimating Project Resources</div>
-<p class="card__text">A 5:48 whiteboard-animation lesson for LT 8150 on bottom-up estimating, rolling up work packages, and converting effort to calendar duration, built with a custom code-driven whiteboard engine.</p>
-</a>
 <div class="card">
-<video controls playsinline preload="metadata" poster="assets/works/tahoe-times/Tahoe_Times_poster.jpg" aria-label="Tahoe Times: a 33-second hand-drawn pencil animation made with AI" style="display:block;width:100%;max-width:300px;aspect-ratio:3/4;margin:0 auto 1rem;border-radius:6px;background:#000;">
-<source src="assets/works/tahoe-times/Tahoe_Times.mp4" type="video/mp4">
-Your browser doesn't support embedded video. <a href="assets/works/tahoe-times/Tahoe_Times.mp4">Download the video</a>.
+<video controls playsinline preload="metadata" poster="assets/works/tahoe-times/Tahoe_Times_16x9_poster.jpg" aria-label="Tahoe Times: a 33-second hand-drawn pencil animation made with AI" style="display:block;width:100%;aspect-ratio:16/9;margin-bottom:1rem;border-radius:6px;background:#000;">
+<source src="assets/works/tahoe-times/Tahoe_Times_16x9.mp4" type="video/mp4">
+Your browser doesn't support embedded video. <a href="assets/works/tahoe-times/Tahoe_Times_16x9.mp4">Download the video</a>.
 </video>
 <div class="card__title">Tahoe Times</div>
-<p class="card__text"><em>A 33-second hand-drawn pencil animation, made entirely with AI.</em></p>
-<p class="card__text">A couple road-trips around Lake Tahoe in a VW Westfalia, pulls over for photos, hops a guardrail to reach the shore, and shares a kiss at sunset. The look is graphite pencil on off-white paper, cross-hatched and animated on twos with a subtle "boiling line" wobble. Black and gray only, with a 70s folk-rock mood.</p>
-<p class="card__text"><strong>Tech stack:</strong> Nano Banana Pro for the first-frame sketch and character reference; Seedance 2.5 on Higgsfield for video (three 10-second image-to-video clips, using reference images to keep faces and style consistent, each starting from the last frame of the one before); Epidemic Sound for the music (two tracks).</p>
-<p class="card__text"><a href="assets/works/tahoe-times/Tahoe_Times_16x9.mp4">Watch the 16:9 version</a></p>
+<p class="card__text">A 33-second graphite-pencil animation of a Lake Tahoe road trip in a VW Westfalia, made entirely with AI (Nano Banana Pro, Seedance 2.5 on Higgsfield, Epidemic Sound). <a href="assets/works/tahoe-times/Tahoe_Times.mp4">Vertical version</a></p>
 </div>
 </div>
 </div>
